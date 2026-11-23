@@ -1,0 +1,61 @@
+/* Estilos del bloque <style> de Presentacion.html */
+::selection {
+  background-color: #fbbf24;
+  color: #0b1020;
+}
+.caratula h2::first-letter {
+  font-size: 32px;
+  color: #fbbf24;
+}
+.caratula p::before {
+  content: "▸ ";
+  color: #fbbf24;
+  font-weight: bold;
+}
+.caratula p::after {
+  content: " ✦";
+  color: #fde68a;
+}
+.indice h2::after {
+  content: " ✦";
+  color: #fbbf24;
+}
+.indice li::marker {
+  font-size: 22px;
+  color: #fbbf24;
+}
+.indice li {
+  padding: 4px 0;
+}
+.indice li a::after {
+  content: " ↗";
+  color: #fbbf24;
+  font-size: 14px;
+}
+
+/* Estilos en línea (style="...") convertidos a reglas */
+.caratula > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.caratula > div:first-child > div {
+  flex: 1;
+  text-align: center;
+  padding: 0 15px;
+}
+.caratula > div:first-child h2 {
+  text-align: center;
+  font-size: 24px;
+  margin: 6px 0;
+}
+img[alt="Logo de la UNAP"] {
+  width: 175px;
+  height: auto;
+}
+img[alt="Logo de la FISI"] {
+  width: 100px;
+  height: auto;
+}
+
+
